@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Filip Krysztaszek personal webpage">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Data Jungle Analysis</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Piedra&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="./static/djastyle.css" rel="stylesheet">
+</head>
+<body style="background:linear-gradient(to top, #2D5F5D .1%, #ffffff 20%")>
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1 text-muted">
+        <p>Today: <span id="datetime"></span></p>
+        <!-- <a class="text-muted" href="#">Subscribe</a> -->
+      </div>
+      <div class="col text-left">
+        <p class="my-header-logo my-header-text">Data Jungle Analysis</p>
+      </div>
+      <!-- <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="text-muted" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      </div> -->
+    </div>
+  </header>
+
+  <!-- <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="btn btn-outline-info " href="#">Analysis</a>
+      <a class="btn btn-outline-info " href="#">MeteoApp</a>
+      <a class="btn btn-outline-info " href="#">Clustering</a>
+      <a class="btn btn-outline-info " href="#">Map</a>
+      <a class="btn btn-outline-info " href="#">Health</a>
+      <a class="btn btn-outline-info " href="#">Music production</a>
+    </nav>
+  </div> -->
+
+  <div class="my_jumbotron p-4 p-md-5">
+    <!-- p-4 p-md-5 text-white rounded"> -->
+     <div class="col-md-10 px-0">
+      <!-- <img style="position: relative; height: 100%;" src="./assets/clust3.PNG" alt="header"></img> -->
+      <h1 class="display-4 font-italic">Data science and analytics in the information jungle</h1>
+      <p class="lead my-2"><strong>Personal blog about data science, analytics and data visualisation</strong></p>
+      <!-- <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <!-- <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"> -->
+      <!-- <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+        </ol>
+      </nav> -->
+      <div class="alert alert-warning" role="alert">
+        <strong>Here today, gone tomorrow </strong>
+      </div>
+      <div class="col mb-4">
+        <!-- <span class="badge badge-warning">New</span> -->
+        <h3 class="mb-0">World map with daily statistics on Covid-19</h3>
+        <div class="mb-1 text-muted">Jul 10</div>
+        <p class="card-text mb-auto">This simple to read web map contain the most important daily statistics about Covid-19 given for each country. Read more and have a look.</p>
+        <a href="#covid19" class="stretched-link">Read full article</a>
+      </div>
+        <!-- <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div> -->
+      <!-- </div> -->
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 flex-column position-static"> <!--d-flex-->
+          <span class="badge badge-danger">HOT</span>
+          <h3 class="mb-0">Meteorology Dashboard</h3>
+          <div class="mb-1 text-muted">Jul 19</div>
+          <p class="mb-auto">MeteoApp dashbord has been launched. Go to the blog post to read more.</p>
+          <a href="#meteo_app_post" class="stretched-link">Read full article</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <div class="card" style="width: 16rem;">
+              <img class="card-img-top" src="./assets/meteoapp/meteoapp_p.JPG" alt="Card image cap">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="row mb-2">
+  <div class="btn-group dropright col-md-5">
+    <button class="btn btn-success btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Projects
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+      <a class="dropdown-item" href="#">Analysis (soon)</a>
+      <a class="dropdown-item" href="http://meteoapp.us-east-1.elasticbeanstalk.com/">MeteoApp</a>
+      <a class="dropdown-item" href="https://s3.us-east-2.amazonaws.com/jda.web/covid19.html">Covid-19 Map</a>
+      <a class="dropdown-item" href="#">K-means Clustering</a>
+      <a class="dropdown-item" href="https://soundcloud.com/coveredbypass">Music production</a>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h5 class="pb-4 mb-2 font-italic border-bottom">
+        Check out some insights above
+      </h5>
+
+      <div class="blog-post">
+        <h2 class="blog-post-title" id="meteo_app_post">MeteoApp Dasboard</h2>
+        <p class="blog-post-meta">July 19, 2020</p>
+
+        <p>I'm glad to announce that the first release of MeteoApp is now available online. The main idea was to simplified the presentation of weather information to give only these parameters with are relevant for use on the daily basis. Check for the latest weather measurements across the biggest cities in Poland.</p>
+        <h5>Locations and measurements</h5>
+        <p>This release contains selected meteorology measurements related to the seven biggest cities in Poland. You can switch between: </p>
+        <p>Tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list select the <strong><em>MeteoApp</em></strong> section. You should be instantly get redirected to the dashboard.</p>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Measurement</th>
+              <th scope="col">Unit of measurement</th>
+              <th scope="col">Symbol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Air temperature</td>
+              <td>Celsius degree</td>
+              <td>℃</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Relative humidity</td>
+              <td>expressed as a percentage</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Sum of precipitation</td>
+              <td>millimetres</td>
+              <td>mm</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Pressure</td>
+              <td>hectopascal</td>
+              <td>hPa</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Wind speed</td>
+              <td>Metre per second</td>
+              <td>m/s</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Wind direction</td>
+              <td>Degree</td>
+              <td>°</td>
+            </tr>
+          </tbody>
+        </table>
+          <p><strong>The time use in this App is given in Coordinated Universal Time (UTC) time standard</strong>. That prevents swiching time beetween CET and CEST timezone in Poland. The cities included in version 1.00 are as follows:</p>
+        <ul>
+          <li>Białystok</li>
+          <li>Gdańsk</li>
+          <li>Kraków</li>
+          <li>Poznań</li>
+          <li>Szczecin</li>
+          <li>Warszawa</li>
+          <li>Wrocław</li>
+        </ul>
+        <h5>Updates and parameters dependencies</h5>
+        <blockquote>
+          <p>The data comes from synoptic stations located in Poland. New measurements should be present ten minutes after every hour approximately, however once in a while new measurement may be still unavailable. To prevent missings on data i set the acquisition  time to 15 minutes after the hour.</p>
+        </blockquote>
+        <p>While the table contains last 24 captured measurements, line chart presents wider time horison. Selected parameters like measurement and city has dependencies as shown in graph below</p>
+        <figure class="figure image-mod1">
+          <img src="./assets/meteoapp/callbacks.JPG" class="figure-img img-fluid rounded" alt="callbacks">
+          <figcaption class="figure-caption text-right">Dependencies for measurement and city selectors</figcaption>
+        </figure>
+        <p>The wind gauge relate only to the city selector, so it gives last measurement of wind speed. For more overall view the polar plot show distribution of wind speed and direction for wider time horizon.</p>
+        <hr>
+        <p>Please bear in mind that this is a first release of this app and some interruptions may occure ocasionally. In my spare time I'll add some new functionalities improvements or fixes.</P>
+        <!-- <pre><code>Example code block</code></pre> -->
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title" id="covid19">World map with daily statistics on Covid-19</h2>
+        <p class="blog-post-meta">July 10, 2020 </p>
+
+        <p>When countries ease pandemic-related restrictions that strangled their citizens everyday life for months, people rapidly and unsurely return to their workplace and social life activities. In the times of post-outbreak of coronavirus some may forgot about the danger lurking around the corner as everyone is missing those normal daily life. In my country media has stopped to provides corona-brief even if indicator of new cases rising or not. How's the situation look today? Is it returning in another wave? Well.. you have to track it by yourself. Anyway be responsible, prevent spreading the virus by wearing masks, avoid crowded and enclosed places, keep social distance at least 2 meters away from other person especially from those who are coughing, or sneezing and keep in mind to daily monitor the impact of infection in your country.</p>
+        <hr>
+        <blockquote>
+          <p>I've created a simple web map which present <strong> daily confirmed cases reports given for each country. </strong> You can find there indicators like: </p>
+        </blockquote>
+        <ul>
+          <li>Current daily amount of confirmed new cases</li>
+          <li>Historical daily amount of confirmed new cases</li>
+          <li>Number of total reported cases</li>
+          <li>Total cases per million citizens</li>
+          <li>Total cases of deaths</li>
+        </ul>
+        <p>Just tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list select the <strong><em>Covid-19 Map</em></strong> section. You should be instantly get redirected to the map.</p>
+        <p>To find historical values of new cases click on the specific marker. The most important part of data comes from Eurepean Centre for Disease and Control (ECDC). The algorithm provide the data directly from <em>Our World in Data</em>, great organization which mission is to make data and research on the world’s largest problems understandable and accessible (find more about them <a href="https://ourworldindata.org/">here</a>). The Covid-19 Map should be updated daily between 10:00 and 12:00 CEST.</p>
+        <blockquote>
+          <p>I hope that you find this map helpful for tracking the indicators of current covid cases and will contribute for overall safe and health.</p>
+        </blockquote>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">First things first</h2>
+        <p class="blog-post-meta-last">July 1, 2020</p>
+
+        <p>There is a bunch of useful information lurking behind the data that today we can get from far and wide information jungle. Internet gives everyone great oportunity for exchanging informations. The question what is the quality of that informations and for what can we use them?</p>
+        <p>I'm happy to announce that <em>Data Jungle Analysis</em> is finally online. It is something I thought about for a long time ago. There is a bunch of useful information lurking behind the data that we can get today from everywhere, the information jungle. The question is for what do we use them? If time allows in this place I will:
+          <ul>
+            <li>share ideas</li>
+            <li>share a specific project that I've been working on recently</li>
+            <li>inform about changes and new features</li>
+            <li>place some piece of my work i would like to share</li>
+            <li>give a link to article or webpage that i find worth attention</li>
+          </ul>
+          <p>Anyway I hope this page will keep me motivated to constantly develop myself, gain new skills and share it with anyone.</p>
+          <blockquote>
+            <p>If you have any suggestion I would be grateful for a message.</p>
+          </blockquote>
+      </div><!-- /.blog-post -->
+
+      <!-- <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav> -->
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">What is this about ?</h4>
+        <p class="mb-0">Hi, thank you for visiting <em>jungle data analysis webpage</em> I'm passionate about data science, big data technologies and data visualisation especially when it comes to predictive modeling. Family living, healthy lifestyle and music production is my another big part of life. I put the quality-first approach into any project that I involved in. Undergraduated degree in Quality Management from the Warsaw University of Technology in Poland. Student of Advanced Analytics & Big Data in Warsaw School of Economics. Along with some of my findings i will try to update the page with additional features and projects i would like to share.</p>
+        <hr>
+        <figure class="fir-figure p-2">
+  				<a class="fir-over" target="_blank" href="http://www.linkedin.com/in/fkrysztaszek">
+  					<img class="fir-author" src="assets/mr/f.png" alt="Me" />
+  					<img class="fir-image" src="assets/mr/IN2.png" />
+  				</a>
+  				<figcaption>
+  					<div class="fig-caption">Author</div>
+  					<div class="fig-caption">Filip Krysztaszek</div>
+  					<div class="fig-caption">Catch me via IN </div>
+  				</figcaption>
+  			</figure>
+        <figure class="fir-figure p-2">
+  				<a class="fir-mail fir_author" rel="noopener" target="_blank" href="mailto: f.krysztaszek@gmail.com">
+  					<img class="fir-author" src="assets/mr/email.jpg" />
+  				</a>
+  				<figcaption>
+  					<div class="fig-caption2">fell free to</div>
+  					<div class="fig-caption2">send me a message</div>
+  					<div class="fig-caption2"></div>
+  				</figcaption>
+  			</figure>
+        <br>
+        <h5 class="font-italic p-3">Additional informations</h5>
+        <a class="btn btn-outline-success" href="./assets/certificates/cert.htm">Certificates & Courses</a>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Archives</h4>
+        <ol class="list-unstyled mb-0">
+          <li><a href="#">June 2020</a></li>
+          <li><a href="#">May 2020</a></li>
+          <li><a href="#">April 2020</a></li>
+          <li><a href="#">March 2020</a></li>
+          <li><a href="#">February 2020</a></li>
+          <li><a href="#">January 2020</a></li>
+        </ol>
+      </div>
+
+      <!-- <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+        </ol>
+      </div> -->
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="my-footer">
+  <p><a href="mailto: f.krysztaszek@gmail.com">Filip Krysztaszek</a><a> &copy 2020</a> </p>
+  <p><a href="#">Back to top</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+  var dt = new Date();
+  document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
+</script>
+
+</body>
+</html>
