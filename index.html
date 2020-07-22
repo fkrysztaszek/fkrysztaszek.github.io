@@ -21,7 +21,7 @@
         <!-- <a class="text-muted" href="#">Subscribe</a> -->
       </div>
       <div class="col text-left">
-        <p class="my-header-logo my-header-text">Data Jungle Analysis</p>
+        <p class="my-header-logo my-header-text">The Data Jungle Analysis</p>
       </div>
       <!-- <div class="col-4 d-flex justify-content-end align-items-center">
         <a class="text-muted" href="#" aria-label="Search">
@@ -176,7 +176,7 @@
             </tr>
           </tbody>
         </table>
-          <p>Datetime use in App is given for <strong> Europe / Poland timezone </strong> CET/CEST. The cities included in version 1.00 are as follows:</p>
+          <p>Datetime use in the App is given for <strong> Europe / Poland timezone </strong> CET/CEST. The cities included in version 1.00 are as follows:</p>
         <ul>
           <li>Białystok</li>
           <li>Gdańsk</li>
@@ -188,16 +188,16 @@
         </ul>
         <h5>Updates and parameters dependencies</h5>
         <blockquote>
-          <p>The data comes from synoptic stations located in Poland, shared by Institute of Meteorology and Water Management in Poland. New measurements should be present ten minutes after every hour approximately, however once in a while new measurement may be still unavailable. To prevent missings on data i set the acquisition  time to 15 minutes after the hour.</p>
+          <p>The data comes from synoptic weather stations located in Poland, shared by Institute of Meteorology and Water Management. New measurements should be present ten minutes after every hour approximately, however once in a while some delay occurs and new measurement could be unavailable. To prevent missing of data, new measurement should be displayed 15 minutes after the hour.</p>
         </blockquote>
-        <p>While the table contains last 24 captured measurements, line chart presents wider time horison. Selected parameters like measurement and city has dependencies as shown in graph below</p>
+        <p>The table in App contains last 24 captured measurements while line chart presents wider time horison. Parameter selectors like <em>'measurement'</em> and <em>'city'</em> has coded dependencies as shown in graph below</p>
         <figure class="figure image-mod1">
           <img src="./assets/meteoapp/callbacks.JPG" class="figure-img img-fluid rounded" alt="callbacks">
-          <figcaption class="figure-caption text-right">Dependencies for measurement and city selectors</figcaption>
+          <figcaption class="figure-caption text-right">Dependencies on measurement and city selectors</figcaption>
         </figure>
-        <p>The wind gauge relate only to the city selector, so it gives last measurement of wind speed. For more overall view the polar plot show distribution of wind speed and direction for wider time horizon.</p>
+        <p>The wind gauge react only by changing <em>'city'</em> selector value, it gives last measurement of wind speed and doesn't appear on the line chart. More overall view gives the polar chart that shows distribution of wind speed and direction of wider time horizon.</p>
         <hr>
-        <p>Please bear in mind that this is a first release of this app and some interruptions may occure ocasionally. In my spare time I'll add some new functionalities improvements or fixes.</P>
+        <p>Please bear in mind that this is a first release of the App, some interruptions may occurs occasionally. If you encounter any or have any question feel free to send me an e-mail.</P>
         <!-- <pre><code>Example code block</code></pre> -->
       </div><!-- /.blog-post -->
 
@@ -205,37 +205,37 @@
         <h2 class="blog-post-title" id="covid19">World map with daily statistics on Covid-19</h2>
         <p class="blog-post-meta">July 10, 2020 </p>
 
-        <p>When countries ease pandemic-related restrictions that strangled their citizens everyday life for months, people rapidly and unsurely return to their workplace and social life activities. In the times of post-outbreak of coronavirus some may forgot about the danger lurking around the corner as everyone is missing those normal daily life. In my country media has stopped to provides corona-brief even if indicator of new cases rising or not. How's the situation look today? Is it returning in another wave? Well.. you have to track it by yourself. Anyway be responsible, prevent spreading the virus by wearing masks, avoid crowded and enclosed places, keep social distance at least 2 meters away from other person especially from those who are coughing, or sneezing and keep in mind to daily monitor the impact of infection in your country.</p>
+        <p>When countries ease pandemic-related restrictions that strangled their citizens everyday life for months, people rapidly and unsurely return to their workplace and social life activities. In the times of coronavirus post-outbreak some may forgot about the danger lurking around the corner as everyone is missing those normal daily life. In my country media has stopped to provides corona-brief independently if indicator of new cases is rising or dropping. How hogh is today? Do we deal with another wava of the pandemic? Well.. I encourage you to track it by yourself. Just for quick reminder, be responsible, prevent spreading the virus by wearing masks, avoid crowded and enclosed places, keep social distance at least 2 meters away from other person especially from those who are coughing, or sneezing and daily monitor the impact of infection rate in your country.</p>
         <hr>
         <blockquote>
-          <p>I've created a simple web map which present <strong> daily confirmed cases reports given for each country. </strong> You can find there indicators like: </p>
+          <p>I've created a simple web map which present <strong> daily confirmed cases reports given for each country. </strong> You'll find there indicators like: </p>
         </blockquote>
         <ul>
-          <li>Current daily amount of confirmed new cases</li>
-          <li>Historical daily amount of confirmed new cases</li>
-          <li>Number of total reported cases</li>
-          <li>Total cases per million citizens</li>
-          <li>Total cases of deaths</li>
+          <li>daily amount of confirmed new cases,</li>
+          <li>historical daily amount of confirmed new cases,</li>
+          <li>number of total reported cases,</li>
+          <li>total cases per million citizens,</li>
+          <li>total cases of deaths.</li>
         </ul>
-        <p>Just tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list select the <strong><em>Covid-19 Map</em></strong> section. You should be instantly get redirected to the map.</p>
-        <p>To find historical values of new cases click on the specific marker. The most important part of data comes from Eurepean Centre for Disease and Control (ECDC). The algorithm provide the data directly from <em>Our World in Data</em>, great organization which mission is to make data and research on the world’s largest problems understandable and accessible (find more about them <a href="https://ourworldindata.org/">here</a>). The Covid-19 Map should be updated daily between 10:00 and 12:00 CEST.</p>
+        <p>Just tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list choose <strong><em>Covid-19 Map</em></strong> section. You should get instantly redirected to the map.</p>
+        <p>All indicators are given as yesterday statistics as they are originated from each country and must have been confirmed. To find historical values of new cases click on the specific counrty marker. The most important part of data comes from Eurepean Centre for Disease and Control (ECDC). Algorithm provide the data directly from <em>Our World in Data</em>, great organization which mission is to make data and research on the world’s largest problems understandable and accessible (find more about them <a href="https://ourworldindata.org/">here</a>). The Covid-19 Map should be updated daily between 10:00 and 12:00 CEST.</p>
         <blockquote>
-          <p>I hope that you find this map helpful for tracking the indicators of current covid cases and will contribute for overall safe and health.</p>
+          <p>I hope that you find this map helpful for tracking the indicators of current cases of Covid-19 and will contribute for overall safe and health.</p>
         </blockquote>
       </div><!-- /.blog-post -->
 
       <div class="blog-post">
-        <h2 class="blog-post-title">First things first</h2>
+        <h2 class="blog-post-title">Page launched, first blood</h2>
         <p class="blog-post-meta-last">July 1, 2020</p>
 
-        <p>There is a bunch of useful information lurking behind the data that today we can get from far and wide information jungle. Internet gives everyone great oportunity for exchanging informations. The question what is the quality of that informations and for what can we use them?</p>
-        <p>I'm happy to announce that <em>Data Jungle Analysis</em> is finally online. It is something I thought about for a long time ago. There is a bunch of useful information lurking behind the data that we can get today from everywhere, the information jungle. The question is for what do we use them? If time allows in this place I will:
+        <p>There is a bunch of useful information lurking behind the data that we can explore today from far and wide information jungle. Internet gives huge opportunity for everyone to exchange informations, the question is about the quality of that informations and reason we are using and shared them ?</p>
+        <p>On <em>The Data Jungle Analysis</em> I would like to share some of my projects that I think could be valuable to use. This blog is something I thought about for a long time ago. If life and time allows in this place I will continue to:
           <ul>
             <li>share ideas</li>
             <li>share a specific project that I've been working on recently</li>
-            <li>inform about changes and new features</li>
+            <li>inform about implemented changes and added new features</li>
             <li>place some piece of my work i would like to share</li>
-            <li>give a link to article or webpage that i find worth attention</li>
+            <li>give links to article and other webpage that i find worth attention</li>
           </ul>
           <p>Anyway I hope this page will keep me motivated to constantly develop myself, gain new skills and share it with anyone.</p>
           <blockquote>
