@@ -102,12 +102,11 @@
     View Projects
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-      <a class="dropdown-item" href="#">Analysis (soon)</a>
+      <a class="dropdown-item" href="./assets/EDS_Brasil/Anomaly_and_EDA.html">Anomaly detection & EDA example</a>
       <a class="dropdown-item" href="http://meteoapp.us-east-1.elasticbeanstalk.com/">MeteoApp</a>
       <a class="dropdown-item" href="https://s3.us-east-2.amazonaws.com/jda.web/covid19.html">Covid-19 Map</a>
-      <a class="dropdown-item" href="#">K-means Clustering</a>
+      <a class="dropdown-item" href="#">Unsupervised ML (soon)</a>
       <a class="dropdown-item" href="https://soundcloud.com/coveredbypass">Music production</a>
-
     </div>
   </div>
 </div>
@@ -117,11 +116,26 @@
   <div class="row">
     <div class="col-md-8 blog-main">
       <h5 class="pb-4 mb-2 font-italic border-bottom">
-        Check out some insights above
+        Check out my insights here
       </h5>
 
       <div class="blog-post">
-        <h2 class="blog-post-title" id="meteo_app_post">MeteoApp Dasboard</h2>
+        <h2 class="blog-post-title" id="meteo_app_post">Anomaly detection & EDA using Apache Spark with Python</h2>
+        <p class="blog-post-meta">August 02, 2020</p>
+        <p>While investigeting anomalies in your dataset you can tempt to select one of a wide range of different kind of methodology of finding outliers. Some of them are based on overall assumptions, others can be more specific, one dimensional or multivariate. It's all depends on your kind of dataset and the aim of data diagnosis. At first, the most important thing is to deeply get into your data while doing exploratory data analysis to find out what problems accure in youd dataset and what you are dealing. After that finding the best solution for detecting outliers can be done.</p>
+        <p>I give an example of exploratory data analysis and detecting outliers based on dataset containing Brasilian houses to rent. The map below points on cities in with the houses to rent are located.</p>
+        <figure class="figure image-mod1">
+          <img src="./assets/EDS_Brasil/brasil.JPG" class="figure-img img-fluid rounded" alt="callbacks">
+          <figcaption class="figure-caption text-right">Selected cities of Brazil</figcaption>
+        </figure>
+        <p>The code has been created using Apache Spark and Python language. You will find there also example of IsolationForest method which in my opinion is one of the most valuable at the moment. It's a tree-based model where partitions are created by first randomly selecting a feature and then selecting random value in range between minimum and maximum of that feature.</p>
+        <p>That's all for the moment. Tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list choose <strong><em>Anomaly detection & EDA example</em></strong> section. You should get instantly redirected to the notepad with code.</p>
+        <hr\>
+        <p>Stay tuned, soon I'll update this post with more insights on the Brasilian houses dataset.</p>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title border-top" id="meteo_app_post">MeteoApp Dasboard</h2>
         <p class="blog-post-meta">July 19, 2020</p>
 
         <p>I'm glad to announce that the first release of MeteoApp is now available online. It's a non-commercial project which the purpose of analysis publicly shared weather data. The main idea was to simplified the presentation of weather information to give only parameters which are relevant on daily basis. Check for the latest weather measurements across the biggest cities in Poland now.</p>
@@ -202,7 +216,7 @@
       </div><!-- /.blog-post -->
 
       <div class="blog-post">
-        <h2 class="blog-post-title" id="covid19">World map with daily statistics on Covid-19</h2>
+        <h2 class="blog-post-title border-top" id="covid19">World map with daily statistics on Covid-19</h2>
         <p class="blog-post-meta">July 10, 2020 </p>
 
         <p>When countries ease pandemic-related restrictions that strangled their citizens everyday life for months, people rapidly and unsurely return to their workplace and social life activities. In the times of coronavirus post-outbreak some may forgot about the danger lurking around the corner as everyone is missing those normal daily life. In my country media has stopped to provides corona-brief independently if indicator of new cases is rising or dropping. How hogh is today? Do we deal with another wava of the pandemic? Well.. I encourage you to track it by yourself. Just for quick reminder, be responsible, prevent spreading the virus by wearing masks, avoid crowded and enclosed places, keep social distance at least 2 meters away from other person especially from those who are coughing, or sneezing and daily monitor the impact of infection rate in your country.</p>
@@ -225,7 +239,7 @@
       </div><!-- /.blog-post -->
 
       <div class="blog-post">
-        <h2 class="blog-post-title">The tipping point</h2>
+        <h2 class="blog-post-title border-top">The tipping point</h2>
         <p class="blog-post-meta-last">July 1, 2020</p>
 
         <p>Finally, I managed to run up this blog. There is a bunch of useful information lurking behind the data that we can explore today from far and wide information jungle. Internet gives huge opportunity for everyone to exchange informations, the question is about the quality of that informations and reason we are using and shared them ?</p>
