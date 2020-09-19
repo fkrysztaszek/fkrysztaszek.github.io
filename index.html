@@ -68,8 +68,8 @@
           <!-- <span class="badge badge-danger">HOT</span> -->
           <h3 class="mb-0">New temperature prediction feature</h3>
           <div class="mb-1 text-muted">Sep 10</div>
-          <p class="mb-auto">I've extend Meteoapp with predictive feature on temperature. Find more information below.</p>
-          <a href="#meteo_app_post" class="stretched-link">Go to article</a>
+          <p class="mb-auto">I've extended Meteoapp with forecast feature on air temperature. Click below and check this out.</p>
+          <a href="#meteo_app_post" class="stretched-link">Read more</a>
         </div>
         <div class="col-auto d-none d-lg-block">
             <div class="card" style="width: 16rem;">
@@ -118,18 +118,18 @@
         <p>This analysis was performed using Databrick's platform, which leverage Spark's distributed processing power while handles exploration of data. Python language. You will find there example of coding in Python language and IsolationForest method, which is in my opinion one of the most valuable for detecting outliers, compared to given example of interquartile rate. IsolationForest is a tree-based model where partitions are created by first randomly selecting a feature and then selecting random value in range between minimum and maximum of that feature.</p>
         <p>That's all for the moment. Tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list choose <strong><em>Anomaly detection & EDA example</em></strong> section. You should get instantly redirected to the notepad with code.</p>
         <hr\>
-        <p>Stay tuned, soon I'll update this post with more insights on that topic.</p>
+        <p>Now you can find insights directly in the project notebook, nevertheless post will be updated.</p>
       </div><!-- /.blog-post -->
 
       <div class="blog-post">
         <h2 class="blog-post-title border-top" id="meteo_app_post">MeteoApp Dashboard</h2>
         <p class="blog-post-meta">July 19, 2020</p>
-        <!-- <p class="blog-post-meta"><span class="badge badge-success">Update</span> Sep 09, 2020</p> -->
+        <p class="blog-post-meta"><span class="badge badge-primary">Update</span> Sep 09, 2020</p>
 
-        <p>I'm glad to announce that the first release of MeteoApp is now available online. It's a non-commercial project which the purpose of analysis publicly shared weather data. The main idea was to simplified the presentation of weather information to give only parameters which could be vital on the daily basis. Check for the latest weather measurements across the biggest cities in Poland now.</p>
-        <p>Tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list choose <strong><em>MeteoApp</em></strong> section. You should get instantly redirected to the App dashboard.</p>
-        <h5>Locations and measurements</h5>
-        <p>This version contains selected meteorology measurements related to the seven biggest cities in Poland. You can switch between measurements like: </p>
+        <p>The second release of MeteoApp is active now. Like in the predecessor version, it's my non-commercial project which the purpose of analyse publicly shared weather data. This app allow all users to check the latest weather measurements across the biggest cities in Poland. The main idea was to simplified the presentation of weather information to give only these weather indicators which are vital on the daily basis. Futhermore, by leveraging gathered data I managed to create predictive model that create forecast on the fly in relation to current air temperature in Warsaw. This feature can be run by switching newly added forecast button located under datatable. </p>
+        <p>Tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list choose <strong><em>MeteoApp</em></strong> section. You should get instantly redirected to the MeteoApp dashboard.</p>
+        <h5>Included locations and measurements</h5>
+        <p>This version include selected meteorology measurements taken directly from sensors installed in the seven biggest cities in Poland (Białystok, Gdańsk, Kraków, Poznań, Szczecin, Warszawaa and Wrocław). The measurements parameters are as follows: </p>
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -178,28 +178,18 @@
             </tr>
           </tbody>
         </table>
-          <p>Datetime use in the App is given for <strong> Europe / Poland timezone </strong> CET/CEST. The cities included in version 1.00 are as follows:</p>
-        <ul>
-          <li>Białystok</li>
-          <li>Gdańsk</li>
-          <li>Kraków</li>
-          <li>Poznań</li>
-          <li>Szczecin</li>
-          <li>Warszawa</li>
-          <li>Wrocław</li>
-        </ul>
         <h5>Updates and parameters dependencies</h5>
         <blockquote>
-          <p>The data comes from synoptic weather stations located in Poland, shared by Institute of Meteorology and Water Management. New measurements should be present ten minutes after every hour approximately, however once in a while some delay occurs and new measurement could be unavailable. To prevent missing of data, new measurement should be displayed 15 minutes after the hour.</p>
+          <p>Datetime use in the App is given for <strong> Europe / Poland timezone </strong> CET/CEST. Data comes from synoptic weather stations located in Poland, administered by Institute of Meteorology and Water Management. New measurements should be present ten minutes approximately after each hour, however once in a while some delays occurs and thus fresh measurement may not be available. To prevent missings on data, new measurement where set to be displayed 15 minutes after each hour.</p>
         </blockquote>
-        <p>The table in App contains last 24 captured measurements while line chart presents wider time horison. Parameter selectors like <em>'measurement'</em> and <em>'city'</em> has coded dependencies as shown in graph below</p>
+        <p>The table in App contains last 24 captured measurements while main line chart on the right side presents wider time horison. Parameter selectors like <em>'measurement'</em> and <em>'city'</em> has coded dependencies as shown in graph below</p>
         <figure class="figure image-mod1">
           <img src="./assets/meteoapp/callbacks.JPG" class="figure-img img-fluid rounded" alt="callbacks">
           <figcaption class="figure-caption text-right">Dependencies on measurement and city selectors</figcaption>
         </figure>
-        <p>The wind gauge react only by changing <em>'city'</em> selector value, it gives last measurement of wind speed and doesn't appear on the line chart. More overall view gives the polar chart that shows distribution of wind speed and direction of wider time horizon.</p>
+        <p>The wind gauge react only by changing <em>'city'</em> selector value, it gives last measurement of wind speed so this measurement doesn't appear on the line chart. Better outlook of wind speed and direction gives the polar chart that shows measurements distribution of wider time horizon.</p>
         <hr>
-        <p>Please bear in mind that this is a first release of the App, some interruptions may occurs occasionally. If you encounter any or have any question feel free to send me an e-mail.</P>
+        <p>Please bear in mind that this App is still in testing and development stage, some interruptions may occurs occasionally. Soon I'll add more information about new prediction model, stay tuned.</P>
         <!-- <pre><code>Example code block</code></pre> -->
       </div><!-- /.blog-post -->
 
@@ -301,7 +291,7 @@
             <span class="badge badge-primary badge-pill">Update</span>
             <small>Aug 25, 2020</small>
           </div>
-          <small>Added window box on the left down corner of the map with the latest published new Covid-19 cases in Poland.</small>
+          <small>Added window box on the left side down corner of the map with the latest published Covid-19 new cases in Poland.</small>
         </a>
       </div>
 
