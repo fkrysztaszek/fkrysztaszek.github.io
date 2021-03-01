@@ -129,10 +129,10 @@
         <p class="blog-post-meta">July 19, 2020</p>
         <p class="blog-post-meta"><span class="badge badge-primary">Update</span> Sep 09, 2020</p>
 
-        <p>MeteoApp it's a dashboard with weater information in Poland. The main idea was to simplified the presentation of data to show only vital indicators which everyone use on the daily basis. This dashboard allow to check the latest weather measurements for the biggest cities in Poland. Another milestone was implementation of statistical model, which creates forecast on the fly based on current air temperature in Warsaw. This forecast can be run by switching on the forecast button in the app, located under datatable. The accuracy of the forecast has been increased lately, as i promised earlier, thus it should perform better from now on.</p>
+        <p>MeteoApp it's a data dashboard that allows to track current weather information in Poland. The first and main idea was to simplified presentation of the data to show only vital indicators that everyone's using on the daily basis. Another crucial step was extend the basic data by develop statistical model, which can create forecasts on the fly. This is perform in relation to historical air temperature data in Warsaw. Forecast can be run by switching on the forecast button in the MeteApp, located under datatable. By the latest update, the accuracy of model prediction has been increased lately, thus it performs much better now.</p>
         <p>To open MeteoApp, tap on the upper green bar <a href=#dropdownMenu>"View projects"</a> and from appeared list choose <strong><em>MeteoApp</em></strong> section. You should get instantly redirected.</p>
         <h5>Included locations and measurements</h5>
-        <p>This version include selected meteorology measurements taken directly from sensors installed in the seven biggest cities in Poland (Białystok, Gdańsk, Kraków, Poznań, Szczecin, Warszawaa and Wrocław). The measurements parameters are as follows: </p>
+        <p>This version include selected meteorology measurements taken directly from multiple sensors installed in the seven biggest cities in Poland (Białystok, Gdańsk, Kraków, Poznań, Szczecin, Warszawa and Wrocław). The measurements parameters are as follows: </p>
         <table class="table table-bordered">
           <thead>
             <tr>
@@ -140,6 +140,7 @@
               <th scope="col">Measurement</th>
               <th scope="col">Unit of measurement</th>
               <th scope="col">Symbol</th>
+              <th scope="col">Forecast</th>
             </tr>
           </thead>
           <tbody>
@@ -148,36 +149,42 @@
               <td>Air temperature</td>
               <td>Celsius degree</td>
               <td>℃</td>
+              <td>Available</td>
             </tr>
             <tr>
               <th scope="row">3</th>
               <td>Relative humidity</td>
               <td>expressed as a percentage</td>
               <td>%</td>
+              <td>Not implemented</td>
             </tr>
             <tr>
               <th scope="row">4</th>
               <td>Sum of precipitation</td>
               <td>millimetres</td>
               <td>mm</td>
+              <td>Not implemented</td>
             </tr>
             <tr>
               <th scope="row">5</th>
               <td>Pressure</td>
               <td>hectopascal</td>
               <td>hPa</td>
+              <td>Not implemented</td>
             </tr>
             <tr>
               <th scope="row">6</th>
               <td>Wind speed</td>
               <td>Metre per second</td>
               <td>m/s</td>
+              <td>Not implemented</td>
             </tr>
             <tr>
               <th scope="row">7</th>
               <td>Wind direction</td>
               <td>Degree</td>
               <td>°</td>
+              <td>Not implemented</td>
             </tr>
           </tbody>
         </table>
@@ -185,14 +192,14 @@
         <blockquote>
           <p>Datetime use in the App is given for <strong> Europe / Poland timezone </strong> CET/CEST. Data comes from synoptic weather stations located in Poland, administered by Institute of Meteorology and Water Management. New measurements should be present ten minutes approximately after each hour, however once in a while some delays occurs and thus fresh measurement may not be available. To prevent missings on data, new measurement where set to be displayed 15 minutes after each hour.</p>
         </blockquote>
-        <p>The table in App contains last 24 captured measurements while main line chart on the right side presents wider time horison. Parameter selectors like <em>'measurement'</em> and <em>'city'</em> has coded dependencies as shown in graph below</p>
+        <p>A datatable contains last 24 captured measurements while main line chart on the right side presents a bit wider time horison. Parameter selectors like <em>'measurement'</em> and <em>'city'</em> has dependencies as shown in graph below.</p>
         <figure class="figure image-mod1">
           <img src="./assets/meteoapp/callbacks.JPG" class="figure-img img-fluid rounded" alt="callbacks">
           <figcaption class="figure-caption text-right">Dependencies on measurement and city selectors</figcaption>
         </figure>
         <p>The wind gauge react only by changing <em>'city'</em> selector value, it gives last measurement of wind speed so this measurement doesn't appear on the line chart. Better outlook of wind speed and direction gives the polar chart that shows measurements distribution of wider time horizon.</p>
         <hr>
-        <p>Please bear in mind that this App is still in testing and development stage, some interruptions may occurs occasionally. Soon I'll provide more informations about this prediction model, stay tuned.</P>
+        <p>Please bear in mind that forecast can be display for any weather parameters or cities but it applies only for air temperature in city of Warsaw.</P>
         <!-- <pre><code>Example code block</code></pre> -->
       </div><!-- /.blog-post -->
 
