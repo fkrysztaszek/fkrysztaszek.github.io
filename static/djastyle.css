@@ -115,15 +115,15 @@ h1, h2, h3, h4, h5, h6 {
 .fir-author {
 	position: absolute;
 	border-radius: 30%;
-	height: 60px;
-	width: 60px;
+	height: 52px;
+	width: 52px;
 	opacity: 95%;
 }
 .fir-image {
 		position: absolute;
 		border-radius: 30%;
-		height: 60px;
-		width: 60px;
+		height: 52px;
+		width: 52px;
 		opacity: 10%;
 		animation: fadeInFadeOut 4s infinite;
 }
@@ -178,4 +178,18 @@ h1, h2, h3, h4, h5, h6 {
 	width: 60%;
 	height: 60%;
 	margin-left: 20%;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.figure-caption {
+  font-size: 90%;
+  color: #6c757d;
 }
