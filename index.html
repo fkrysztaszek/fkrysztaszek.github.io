@@ -253,23 +253,25 @@
     <aside class="col-md-4 blog-sidebar">
       <div class="p-4 mb-3 bg-light rounded">
         <h4 class="font-italic">What this is about?</h4>
-        <p class="mb-0">Hi, thanks for visiting <em>Data Jungle Analyses</em>. It's a personal website focusing primarily on the field defined as data science. I'm an analyst, enthusiast of statistics methods, data mining, programming simulation and optimization algorithms. I graduated from the Warsaw University of Technology in Poland in Quality Management, currently on writing MA thesis in the field of Advanced Analytics and Big Data in Warsaw School of Economics.</p>
+      <!--  <div class= "initiallyHidden" id="dynamic"> -->
+        <p class="mb-3 initiallyHidden dynamic">Hi, thanks for visiting <em>Data Jungle Analyses</em>. It's a personal website focusing primarily on the field defined as data science. I'm an analyst, as an enthusiast of statistics methods and data mining proeficient in Python and R. Nevertheless BigData tech along with web development are also in the field of my interests. I graduated from the Warsaw University of Technology in Poland in Quality Management, currently on writing MA thesis in the field of Advanced Analytics and Big Data in Warsaw School of Economics.</p>
+        <button type="button" class="p-1 btn btn-info btn-sm" id="hide">Show more</button>
         <hr>
-        <figure class="fir-figure p-2">
+        <figure class="fir-figure p-2 initiallyHidden dynamic2">
   				<a class="fir-over" target="_blank" href="http://www.linkedin.com/in/fkrysztaszek">
   					<img class="fir-author" src="assets/mr/f.png" alt="Me" />
   					<img class="fir-image" src="assets/mr/IN2.png" />
   				</a>
-  				<figcaption>
+  				<figcaption class="initiallyHidden dynamic2">
   					<div class="fig-caption"><b>Author</b></div>
   					<div class="fig-caption">Filip Krysztaszek</div>
   				</figcaption>
   			</figure>
-        <figure class="fir-figure p-2">
+        <figure class="fir-figure p-2 initiallyHidden dynamic2">
   				<a class="fir-mail fir_author" rel="noopener" target="_blank" href="mailto: f.krysztaszek@gmail.com">
   					<img class="fir-author" src="assets/mr/email.jpg" />
   				</a>
-  				<figcaption>
+  				<figcaption class="initiallyHidden dynamic2">
             <div class="fig-caption2"><b>e-mail</b></div>
   				</figcaption>
   			</figure>
@@ -282,6 +284,7 @@
         <p class="mb-0">You can find all my passed courses and certificates earned by clicking on the button below.</p>
         <br>
         <a class="btn btn-outline-success" href="./assets/certificates/cert.htm">Show certificates</a>
+        <!--</div>-->
       </div>
       <!--
       <div class="p-4">
@@ -373,9 +376,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   var dt = new Date();
   document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".dynamic").toggle(450);
+    $(".dynamic2").fadeToggle(650);
+  });
+});
 </script>
 
 </body>
