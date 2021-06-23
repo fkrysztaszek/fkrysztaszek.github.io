@@ -280,14 +280,11 @@
           <img src="./assets/certificates/DS_Generalized_Linear_Models_in_Python.JPG" alt="cert" class="img-thumbnail">
           <p class="figure-caption">My latest accomplished course</p>
         </figure>
-<!--        <p class="mb-0">You can find all my passed courses and certificates earned by clicking on the button below.</p> -->
-        <p class="mb-0" id="change">You'll find more general information about me by clicking on 'show info & contact' above.</p>
+        <p class="mb-0" id="change">You'll find more general information from author by clicking on 'show info & contact' above.</p>
         <br>
-        <!--<a class="btn btn-outline-success test" id="test" onclick="change_text()">TEST</a> -->
-
-        <div class="list-group align-self-md-center">
-          <a href="./assets/certificates/cert.htm" class="list-group-item btn btn-outline-info list-group-item-action flex-column align-items-start align-self-md-center dynamic3 initiallyHidden">
-            <p class="text-md-center">SHOW CERTIFICATES</p>
+        <div class="list-group">
+          <a href="./assets/certificates/cert.htm" class="list-group-item btn btn-outline-info align-items-center dynamic3 initiallyHidden">
+            <p style="text-align:center;">SHOW CERTIFICATES</p>
           </a>
         </div>
       </div>
@@ -383,7 +380,7 @@
 
     $("#hide").on("click", function() {
       $("#change").fadeOut(function () {
-        $("#change").text(($("#change").text() == 'Clik on the button below to find all my passed courses and cerficates earned') ? "You'll find more general information about me by clicking on 'show info & contact' above." : 'Clik on the button below to find all my passed courses and cerficates earned').fadeIn();
+        $("#change").text(($("#change").text() == 'Clik on the button below to find all my passed courses and cerficates earned.') ? "You'll find more general information about me by clicking on 'show info & contact' above." : 'Clik on the button below to find all my passed courses and cerficates earned.').fadeIn();
       });
       $("#hide").fadeOut(10,function () {
         $("#hide").text(($("#hide").text() == 'Show info & contact') ? 'Hide info & contact' : 'Show info & contact').fadeIn();
@@ -392,12 +389,5 @@
   });
 </script>
 
-<!--
-<script>
-  function change_text(){
-    document.getElementById("change").innerHTML = "Hello.";
-}
-</script>
--->
 </body>
 </html>
