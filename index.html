@@ -111,7 +111,7 @@
       </h5>
 
       <div class="blog-post"><!-- /.blog-post -->
-        <h2 class="blog-post-title" id="MedC_post">MedC App helps getting wider informations about specific medicine</h2>
+        <h2 class="blog-post-title" id="MedC_post">MedC App helps getting wider information on specific medicine</h2>
         <p class="blog-post-meta">Mar 04, 2021</p>
 
         <p>MedC app allows to quickly show and download wider informations on specific medicine product by providing identification number EAN or PC. These numbers can be found on every drug package. By passing it through the app, you can download medicine characteristics for particular drug or package laaflet in pdf file format.</p>
@@ -253,9 +253,8 @@
     <aside class="col-md-4 blog-sidebar">
       <div class="p-4 mb-3 bg-light rounded">
         <h4 class="font-italic">What this is about?</h4>
-      <!--  <div class= "initiallyHidden" id="dynamic"> -->
         <p class="mb-3 initiallyHidden dynamic">Hi, thanks for visiting <em>Data Jungle Analyses</em>. It's a personal website focusing primarily on the field defined as data science. I'm an analyst, as an enthusiast of statistics methods and data mining proeficient in Python and R. Nevertheless BigData tech along with web development are also in the field of my interests. I graduated from the Warsaw University of Technology in Poland in Quality Management, currently on writing MA thesis in the field of Advanced Analytics and Big Data in Warsaw School of Economics.</p>
-        <button type="button" class="p-1 btn btn-info btn-sm" id="hide">Show more</button>
+        <button type="button" class="p-1 btn btn-info btn-sm" id="hide">Show info & contact</button>
         <hr>
         <figure class="fir-figure p-2 initiallyHidden dynamic2">
   				<a class="fir-over" target="_blank" href="http://www.linkedin.com/in/fkrysztaszek">
@@ -267,11 +266,11 @@
   					<div class="fig-caption">Filip Krysztaszek</div>
   				</figcaption>
   			</figure>
-        <figure class="fir-figure p-2 initiallyHidden dynamic2">
+        <figure class="fir-figure p-2 initiallyHidden dynamic3">
   				<a class="fir-mail fir_author" rel="noopener" target="_blank" href="mailto: f.krysztaszek@gmail.com">
   					<img class="fir-author" src="assets/mr/email.jpg" />
   				</a>
-  				<figcaption class="initiallyHidden dynamic2">
+  				<figcaption class="initiallyHidden dynamic3">
             <div class="fig-caption2"><b>e-mail</b></div>
   				</figcaption>
   			</figure>
@@ -281,30 +280,23 @@
           <img src="./assets/certificates/DS_Generalized_Linear_Models_in_Python.JPG" alt="cert" class="img-thumbnail">
           <p class="figure-caption">My latest accomplished course</p>
         </figure>
-        <p class="mb-0">You can find all my passed courses and certificates earned by clicking on the button below.</p>
+<!--        <p class="mb-0">You can find all my passed courses and certificates earned by clicking on the button below.</p> -->
+        <p class="mb-0" id="change">You'll find more general information about me by clicking on 'show info & contact' above.</p>
         <br>
-        <a class="btn btn-outline-success" href="./assets/certificates/cert.htm">Show certificates</a>
-        <!--</div>-->
+        <!--<a class="btn btn-outline-success test" id="test" onclick="change_text()">TEST</a> -->
+
+        <div class="list-group align-self-md-center">
+          <a href="./assets/certificates/cert.htm" class="list-group-item btn btn-outline-info list-group-item-action flex-column align-items-start align-self-md-center dynamic3 initiallyHidden">
+            <p class="text-md-center">SHOW CERTIFICATES</p>
+          </a>
+        </div>
       </div>
-      <!--
-      <div class="p-4">
-        <h4 class="font-italic">Archives</h4>
-        <ol class="list-unstyled mb-0">
-          <li><a href="#">June 2020</a></li>
-          <li><a href="#">May 2020</a></li>
-          <li><a href="#">April 2020</a></li>
-          <li><a href="#">March 2020</a></li>
-          <li><a href="#">February 2020</a></li>
-          <li><a href="#">January 2020</a></li>
-        </ol>
-      </div>
-      -->
 
       <!-- UPDATES INFO SECTION-->
 
       <h4 class="p-4 font-italic">Updates / Maintainance</h4>
 
-      <div class="list-group">
+<!--      <div class="list-group">
         <a href="#meteo_app_post" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
             <span class="badge badge-warning badge-pill">Maintainance</span>
@@ -313,7 +305,7 @@
           <small>Meteo app is under maintainance until futher notice.</small>
         </a>
       </div>
-
+-->
       <div class="list-group">
         <a href="#meteo_app_post" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="d-flex w-100 justify-content-between">
@@ -382,13 +374,30 @@
   document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear());
 </script>
 <script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".dynamic").toggle(450);
-    $(".dynamic2").fadeToggle(650);
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $(".dynamic").toggle(450);
+      $(".dynamic2").fadeToggle(850);
+      $(".dynamic3").fadeToggle(1300);
+    });
+
+    $("#hide").on("click", function() {
+      $("#change").fadeOut(function () {
+        $("#change").text(($("#change").text() == 'Clik on the button below to find all my passed courses and cerficates earned') ? "You'll find more general information about me by clicking on 'show info & contact' above." : 'Clik on the button below to find all my passed courses and cerficates earned').fadeIn();
+      });
+      $("#hide").fadeOut(10,function () {
+        $("#hide").text(($("#hide").text() == 'Show info & contact') ? 'Hide info & contact' : 'Show info & contact').fadeIn();
+      });
+    });
   });
-});
 </script>
 
+<!--
+<script>
+  function change_text(){
+    document.getElementById("change").innerHTML = "Hello.";
+}
+</script>
+-->
 </body>
 </html>
